@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root {
+    --backgroundcolor: #0E0E0E;
+    --secondarybackground: #222222;
+    --brandcolor: #4338CA;
+}
+
+body {
+    background-color: var(--backgroundcolor);
+    margin: 0;
+    overflow-x: hidden;
+}
+
+/*Scrollbar*/
+::-webkit-scrollbar {
+    width: 0.6rem;
+  }
+  
+
+::-webkit-scrollbar-track {
+    background: #1d1d1d;
+}
+  
+
+::-webkit-scrollbar-thumb {
+    background: #4b4b4b;
+    border-radius: 2rem;
+}
+  
+/*Nav*/
+
+header {
+    position: fixed;
+    background-color: #0e0e0eda;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    width: 100%;
+    display: flex;
+    height: 50px;
+    border-bottom: solid 1px var(--secondarybackground);
+    align-items: center;
+    justify-content: space-between;
+    z-index: 500;
+}
+
+header img {
+    padding-left: 20px;
+}
+
+.burger-icon {
+    display: none;
+    height: 35px;
+}
+
+nav {
+    padding-right: 20px;
+}
+
+nav a {
+    font-size: 1rem;
+    text-decoration: none;
+    position: relative;
+    padding-inline: 0.6rem;
+    font-family: "Inter",sans-serif;
+    color: white;
+    transition: 0.2s color, 0.2s transform;
+}
+
+nav a::after {
+    content: '';
+    display: flex;
+    position: absolute;
+    left: 50%;
+    translate: -50% -50%;
+    width: 0%;
+    background-color: var(--brandcolor);
+    height: 2px;
+    bottom: -3px;
+    transition: 0.3s width;
+}
+
+nav a:hover::after {
+    width: 85%;
+}
+
+
+@media only screen and (max-width: 900px)
+{
+    .burger-icon {
+        display: flex;
+    }
+
+    nav {
+        display: none;
+    }
+}
+
+/*Landingpage*/
+
+.landingpage {
+    background-color: var(--backgroundcolor);
+    height: 100vh;
+    width: 100%;
+}
+
+/*Spinning gear*/
+
+
+.spinning-gear {
+    position: absolute;
+    z-index: -1;
+    height: 700px;
+    right: -30%;
+    transition: transform 0.1s linear;
+    top: 200%;
+}
+

@@ -1,0 +1,88 @@
+.work-container {
+    padding-top: 70px;
+    padding-bottom: 40px;
+    padding-left: 85px;
+}
+
+.work-container h1 {
+    margin: 0;
+    padding-bottom: 5px;
+    font-family: "Inter",sans-serif;
+    color: white;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.work-container p {
+    margin: 0;
+    font-family: "Inter",sans-serif;
+    color: #818181;
+    font-weight: 400;
+    font-size: 1.3rem;
+}
+
+.example-picture {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.example-template {
+    position: relative;
+    display: inline-block;
+}
+
+.example-hover {
+    display: flex;
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0,0,0,0.5);
+    opacity: 0;
+    transition: opacity 0.3s;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    font-family: "Inter",sans-serif;
+}
+
+.work-section {
+    position: relative;
+}
+
+.example-template:hover .example-hover {
+    opacity: 1;
+}
+
+.glide__slides {
+    width: 90%;
+}
+
+@media only screen and (max-width: 900px)
+{
+    .work-container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-left: 0;
+    }
+
+
+    .work-container h1 {
+        text-align: center;
+        font-size: 2.2rem;
+    }
+
+    .work-container p {
+        text-align: center;
+        font-size: 1.1rem;
+    }
+}
+
+
+

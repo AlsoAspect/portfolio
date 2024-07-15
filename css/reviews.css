@@ -1,0 +1,113 @@
+.reviews-container {
+    padding-top: 70px;
+    padding-bottom: 40px;
+    padding-left: 85px;
+}
+
+.reviews-container h1 {
+    margin: 0;
+    padding-bottom: 5px;
+    font-family: "Inter",sans-serif;
+    color: white;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.reviews-container p {
+    margin: 0;
+    font-family: "Inter",sans-serif;
+    color: #818181;
+    font-weight: 400;
+    font-size: 1.3rem;
+}
+
+
+
+.user-review {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255,255,255, 0.05);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    border: 1px solid #4D4D4D;
+    font-family: "Inter",sans-serif;
+    height: fit-content;
+    width: fit-content;
+    padding: 20px 25px 20px 25px;
+    gap: 30px;
+}
+
+.upper-section {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.upper-section::after {
+    content: '';
+    position: absolute;
+    width: 90%;
+    height: 2px;
+    background-color: #323232;
+    align-items: center;
+    bottom: -15px;
+}
+
+.upper-section img {
+    height: 65px;
+}
+
+.user-info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    color: white;
+}
+
+.user-name {
+    display: flex;
+    color: white;
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+
+.user-desc {
+    font-weight: 400;
+    color: #9B9B9B;
+}
+
+.bottom-section {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #9B9B9B;
+    padding-block: 20px;
+}
+
+.bottom-section::after {
+    content: "\"";
+    position: absolute;
+    display: flex;
+    color: #4338CA;
+    font-weight: 500;
+    font-size: 60px;
+    bottom: -40px;
+    right: -10px;
+}
+
+.bottom-section::before {
+    content: "\"";
+    position: absolute;
+    display: flex;
+    color: #4338CA;
+    font-weight: 500;
+    font-size: 60px;
+    top: -20px;
+    left: -15px;
+}
+
