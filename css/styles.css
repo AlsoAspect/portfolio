@@ -111,8 +111,18 @@ nav a:hover::after {
     position: absolute;
     z-index: -1;
     height: 700px;
-    right: -30%;
-    transition: transform 0.1s linear;
-    top: 200%;
+    transform: translate(-50%, -50%);
+    right: -10%;
+    animation: spin 10s linear infinite;
+    top: 160%;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
 
