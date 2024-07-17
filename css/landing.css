@@ -1,0 +1,163 @@
+.landing-page {
+    display: flex;
+    background-color: var(--backgroundcolor);
+    height: 100vh;
+    width: 100%;
+    font-family: "Inter",sans-serif;
+    color: white;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.landing-background {
+    position: absolute;
+    display: flex;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    height: 100%;
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+.landing-icon {
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+.landing-container {
+    display: flex;
+    z-index: 2;
+    flex-direction: column;
+    align-self: center;
+    justify-items: center;
+    gap: 70px;
+    padding-left: 85px;
+}
+
+.landing-container h1 {
+    display: flex;
+    margin: 0;
+    font-weight: 600;
+    font-size: 3.5rem;
+    position: relative;
+}
+
+.landing-container h1::after {
+    content: url(/img/title-underline.svg);
+    position: absolute;
+    bottom: -32px;
+}
+
+.landing-buttons {
+    display: flex;
+    gap: 25px;
+}
+
+.landing-buttons button {
+    /* padding-block: 20px;
+    padding-inline: 40px; */
+    width: 200px;
+    height: 66px;
+    border-style: none;
+    border-radius: 50px;
+    font-weight: 500;
+    font-size: 1.1rem;
+    transition: all 0.3s;
+}
+
+#order-button {
+    background-color: var(--brandcolor);
+    color: white;
+}
+
+#learn-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: #151515;
+    color: rgb(164, 164, 164);
+}
+
+#order-button:hover {
+    transform: scale(1.05);
+    background-color: var(--backgroundcolor);
+    color: var(--brandcolor);
+    border: 2px solid var(--brandcolor);
+    cursor: pointer;
+}
+
+#learn-button:hover {
+    transform: scale(1.05);
+    background-color: var(--backgroundcolor);
+    color: white;
+    border: 2px solid white;
+    cursor: pointer;
+}
+
+#learn-button svg {
+    transition: all 0.3s;
+}
+
+#learn-button:hover svg {
+    transform: rotate(90deg);
+}
+
+/*:active doesn't seem to be working in .landing-buttons button?*/
+
+#order-button:active {
+    transform: scale(0.9);
+}
+
+#learn-button:active {
+    transform: scale(0.9);
+}
+
+@media only screen and (max-width: 900px) 
+{
+    .landing-page {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .landing-container {
+        padding: 0;
+        align-items: center;
+    }
+
+    .landing-container h1 {
+        padding: 0;
+        display: flex;
+        text-align: center;
+        font-size: 2.5rem;
+    }
+
+    .landing-page h1::after {
+        display: flex;
+        transform: translate(-50%,0);
+        left: 50%;
+        bottom: -35px;
+    }
+
+    .landing-buttons button {
+        width: 180px;
+        height: 60px;
+        border-style: none;
+        border-radius: 50px;
+        font-weight: 500;
+        font-size: 1.1rem;
+        transition: all 0.3s;
+    }
+}
+

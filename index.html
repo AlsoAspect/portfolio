@@ -10,12 +10,16 @@
     <link rel="stylesheet" href="css/about.css">
     <link rel="stylesheet" href="css/work.css">
     <link rel="stylesheet" href="css/reviews.css">
-
+    <link rel="stylesheet" href="css/pricing.css">
+    <link rel="stylesheet" href="css/landing.css">
 
     <link rel="stylesheet" href="css/glide.core.min.css">
     <link rel="stylesheet" href="css/glide.theme.min.css">
     <!--JS-->
-    <script src="js/img-rotate.js"></script>
+    <script src="js/coolanim.js"></script>
+    <!--<script src="js/img-rotate.js"></script>!-->
+    <!--<script src="js/hover-effect.js"></script>!-->
+    
     <!--NAV-->
 </head>
 <body>
@@ -32,20 +36,33 @@
         <img class="burger-icon" src="img/burger-icon.svg" alt="burger-icon">
     </header>
 
-    <section class="landingpage"></section>
+    <section class="landing-page">
+        <img class="landing-background" src="img/shapes-background.svg" alt="shapes-background">
+        <img class="landing-icon" src="img/aspect-landing-icon.svg" alt="aspect-landing-icon">
+        <div class="landing-container">
+            <h1>Have it designed,<br>your way</h1>
+            <div class="landing-buttons">
+                <button id="order-button">Order Now</button>
+                <button id="learn-button">Learn More <svg width="19" height="16" viewBox="0 0 19 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 7C0.447715 7 0 7.44772 0 8C0 8.55228 0.447715 9 1 9V7ZM18.7071 8.70711C19.0976 8.31658 19.0976 7.68342 18.7071 7.29289L12.3431 0.928932C11.9526 0.538408 11.3195 0.538408 10.9289 0.928932C10.5384 1.31946 10.5384 1.95262 10.9289 2.34315L16.5858 8L10.9289 13.6569C10.5384 14.0474 10.5384 14.6805 10.9289 15.0711C11.3195 15.4616 11.9526 15.4616 12.3431 15.0711L18.7071 8.70711ZM1 9H18V7H1V9Z" fill="currentColor"/>
+                    </svg></button>
+            </div>
+        </div>
+        
+    </section>
 
     <section class="about-section">
         <div class="about-container">
-            <h1>About me</h1>
-            <p>Hello! I am Aspect, a passionate UI/UX Designer located in Belgium. Over the course of the past year, I have had the privilege of working on several inspiring projects. I'm specialized in various styles, ranging from modern to cartoonish user interfaces.</p>
+            <h1 class="coolanimation">About me</h1>
+            <p class="coolanimation">Hello! I am Aspect, a passionate UI/UX Designer located in Belgium. Over the course of the past year, I have had the privilege of working on several inspiring projects. I'm specialized in various styles, ranging from modern to cartoonish user interfaces.</p>
         </div>
         <img src="img/Avatar.png" alt="Aspect Avatar Drawing">
     </section>
 
     <section class="work-section">
         <div class="work-container">
-            <h1>Past Work</h1>
-            <p><font color="#4338CA">Highlighting</font> my best creations</p>
+            <h1 class="coolanimation">Past Work</h1>
+            <p class="coolanimation"><font color="#4338CA">Highlighting</font> my best creations</p>
         </div>
 
         <div class="glide" id="slider1">
@@ -140,12 +157,14 @@
                 <button class="glide__bullet" data-glide-dir="=4"></button>
               </div>
         </div>
+
+        <img class="spinning-gear" src="img/gear-icon.svg" alt="spinning-gear">
     </section>
 
-    <section class="work-section">
-        <div class="work-container">
-            <h1>Past Work</h1>
-            <p><font color="#4338CA">Highlighting</font> my best creations</p>
+    <section class="reviews-section">
+        <div class="reviews-container">
+            <h1>Reviews</h1>
+            <p>Over 50 <font color="#4338CA">Highlighting</font> clients</p>
         </div>
 
         <div class="glide" id="slider2">
@@ -211,20 +230,13 @@
                             Aspect is an exceptionally talented and<br> capable individual, consistently exceeding<br> my expectations anddelivering quality UI<br>under demanding time constraints. He<br> adapts to the requested style, and makes<br>adjustments if necessary. I would strongly<br>recommend working with him.
                         </div>
                     </li>
+                    
                 </ul>
             </div>
         </div>
     </section>
 
-    <img class="spinning-gear" src="img/gear-icon.svg" alt="spinning-gear">
-
-
-    <section class="reviews-section">
-        <div class="reviews-container">
-            <h1>Reviews</h1>
-            <p>Over 50 <font color="#4338CA">Highlighting</font> clients</p>
-        </div>
-    </section>
+    
 
     <!--<div class="user-review">
         <div class="upper-section">
@@ -239,8 +251,98 @@
         </div>
     </div>!-->
 
-    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+    <section class="pricing-section">
+        <div class="pricing-header">
+            <h1>Pricing tailored to your budget</h1>
+            <p>Affordable and flexible plans for every project.</p>
+            <img src="img/gradient-circle.png" alt="gradient-circle">
+        </div>
+        <div class="pricing-container"> <!--Container that holds the 3 classes-->
+            <div class="pricing-class" id="standard-package" data-tilt data-tilt-glare="true" data-tilt-perspective="1000" data-tilt-maxGlare="0.2" data-tilt-scale="1.05" >
+                <div class="pricing-package" >
+                    <div class="package-info">
+                        <h2>Standard</h2>
+                        <div class="package-price">
+                            <h1><span class="pricing-gradient">$65</span> <span class="or-text">or</span> <span class="pricing-gradient">20K</span></h1>
+                            <img src="img/robux-icon.svg" alt="robux-icon">
+                        </div>
+                        <p>Perfect for small projects with a limited budget.</p>
+                    </div>
+    
+                    <div class="package-perks">
+                        <ul>
+                            <li>Up to 5 frames</li>
+                            <li>High Quality</li>
+                            <li>1 Free Revision</li>
+                            <li>.PNG Files</li>
+                        </ul>
+                    </div>
+                </div> <!--Package itself-->
 
+                <div class="package-outline"></div> <!--Gradient outline for package-->
+            </div>
+
+            <div class="pricing-class" id="deluxe-package" data-tilt data-tilt-glare="true" data-tilt-perspective="1000" data-tilt-maxGlare="0.2" data-tilt-scale="1.05">
+                <div class="pricing-package" >
+                    <div class="package-info">
+                        <h2>Deluxe</h2>
+                        <div class="package-price">
+                            <h1><span class="pricing-gradient">$130</span> <span class="or-text">or</span> <span class="pricing-gradient">40K</span></h1>
+                            <img src="img/robux-icon.svg" alt="robux-icon">
+                        </div>
+                        <p>The perfect plan for most projects, affordable yet extensive.</p>
+                    </div>
+    
+                    <div class="package-perks">
+                        <ul>
+                            <li>All of the benefits from the previous package</li>
+                            <li>Up to 10 frames</li>
+                            <li>High Priority</li>
+                            <li>3 Free Revisions</li>
+                            <li>Studio Imported</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="package-outline"></div>
+            </div>
+            
+            <div class="pricing-class" id="legendary-package" data-tilt data-tilt-glare="true" data-tilt-perspective="1000" data-tilt-maxGlare="0.2" data-tilt-scale="1.05">
+                <div class="pricing-package" >
+                    <div class="package-info">
+                        <h2>Legendary</h2>
+                        <div class="package-price">
+                            <h1><span class="pricing-gradient">$195</span> <span class="or-text">or</span> <span class="pricing-gradient">60K</span></h1>
+                            <img src="img/robux-icon.svg" alt="robux-icon">
+                        </div>
+                        <p>The ultimate plan for bigger projects</p>
+                    </div>
+    
+                    <div class="package-perks">
+                        <ul>
+                            <li>All of the benefits from the previous package</li>
+                            <li>Up to 20 frames</li>
+                            <li>Highest Quality</li>
+                            <li>Highest Priority</li>
+                            <li>6 Free Revisions</li>
+                            <li>Source Files (.FIG)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="package-outline"></div>
+            </div>
+
+            
+        </div>
+    </section>
+
+    <!-- do the coolanimation stuff, css is in abous.css -->
+    <!-- GET FILES OF THIS AND PUT IN HEADER AND JS FOLDER -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
     <!--PUT THIS IN JS SCRIPT-->
     <script>
         const config1 = {
@@ -271,6 +373,44 @@
         new Glide('#slider1', config1).mount()
         new Glide('#slider2', config2).mount()
     </script>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+    <footer>
+        <div class="upper-footer">
+            <div class="left-footer">
+                <div class="left-content">
+                    <img class="footer-icon" src="img/icon.svg" alt="aspect-icon">
+                    <h1>Elevate your UI design<br>while minimizing costs, today</h1>
+                    <div class="footer-buttons">
+                        <button class="footer-order">Order Now</button>
+                        <button class="footer-mini-icon">
+                            <!-- FINDS SVGS? -->
+                            <img src="img/twitter-icon.png" alt="twitter-icon">
+                        </button>
+                        <button class="footer-mini-icon">
+                            <img src="img/discord-icon.png" alt="discord-icon">
+                        </button>
+                </div>
+                </div>
+            </div>
+            <div class="right-footer">
+                <div class="footer-links">
+                    <p class="footer-title">Site</p>
+                    <a href="">Home</a>
+                    <a href="">About</a>
+                    <a href="">Past Work</a>
+                    <a href="">Reviews</a>
+                    <a href="">Pricing</a>
+                </div>
+                <div class="footer-links">
+                    <p class="footer-title">Support</p>
+                    <a href="">Contact</a>
+                    <a href="">FAQ</a>
+                    <a href="">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright-footer">Copyright &copy; alsoaspect.com - All Rights Reserved.</div>
+    </footer>
+
 </body>
 </html>

@@ -21,14 +21,12 @@
     font-size: 1.3rem;
 }
 
-
-
 .user-review {
     display: flex;
     flex-direction: column;
     background-color: rgba(255,255,255, 0.05);
-    -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
     border-radius: 12px;
     border: 1px solid #4D4D4D;
     font-family: "Inter",sans-serif;
@@ -90,7 +88,7 @@
 }
 
 .bottom-section::after {
-    content: "\"";
+    content: "”";
     position: absolute;
     display: flex;
     color: #4338CA;
@@ -101,7 +99,7 @@
 }
 
 .bottom-section::before {
-    content: "\"";
+    content: "“";
     position: absolute;
     display: flex;
     color: #4338CA;

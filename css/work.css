@@ -2,6 +2,7 @@
     padding-top: 70px;
     padding-bottom: 40px;
     padding-left: 85px;
+    overflow-x: hidden;
 }
 
 .work-container h1 {
@@ -55,6 +56,28 @@
     position: relative;
 }
 
+/*Spinning gear*/
+
+.spinning-gear {
+    position: absolute;
+    display: none;
+    height: 700px;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    animation: spin 10s linear infinite;
+    z-index: -1;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
 .example-template:hover .example-hover {
     opacity: 1;
 }
@@ -83,6 +106,8 @@
         font-size: 1.1rem;
     }
 }
+
+
 
 
 

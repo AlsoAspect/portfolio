@@ -22,6 +22,17 @@
     font-weight: 600;
 }
 
+.coolanimation {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.8s ease-out;
+}
+
+.coolanimation.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 .about-container p {
     color: #C0BBFF;
     margin-top: 10px;
@@ -46,7 +57,7 @@
 }
 
 .about-section img:hover {
-    transform: rotate(-2deg);
+    transform: rotate(-2deg) scale(1.1);
 }
 
 @media only screen and (max-width: 900px)
